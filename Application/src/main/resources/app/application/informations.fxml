@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="220.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.application.Controller">
+   <center>
+      <VBox alignment="CENTER" prefHeight="195.0" prefWidth="207.0">
+         <children>
+            <Label fx:id="howPlay" alignment="CENTER" minHeight="350.0" minWidth="400.0" prefHeight="197.0" prefWidth="28.0" text="Label" />
+            <Pane maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#backToGame" text="Go back" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="20.0" prefWidth="400.0" />
+            <HBox alignment="TOP_RIGHT" prefWidth="400.0">
+               <children>
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#exitButton" text="exit" />
+                  <Pane prefHeight="20.0" prefWidth="20.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

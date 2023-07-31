@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.application.Controller">
+   <center>
+      <VBox alignment="CENTER" prefHeight="307.0" prefWidth="344.0" spacing="20.0">
+        <padding>
+          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+        <Label fx:id="outText" text="Type a letter" />
+         <TextField fx:id="letter" />
+         <HBox alignment="CENTER">
+            <children>
+              <Button fx:id="submitButton" onAction="#submitB" text="Submit" />
+               <Pane prefHeight="25.0" prefWidth="31.0" />
+               <Button fx:id="tipButton" mnemonicParsing="false" onAction="#tip" text="Tip" />
+            </children>
+         </HBox>
+         <Label fx:id="debugging" text="Type a letter" />
+      </VBox>
+   </center>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="20.0" prefWidth="346.0" />
+            <Pane nodeOrientation="RIGHT_TO_LEFT">
+               <children>
+                  <Button fx:id="exit" alignment="CENTER_RIGHT" layoutX="20.0" mnemonicParsing="false" onAction="#exitButton" text="exit" />
+                  <Button fx:id="infoButton" alignment="CENTER" layoutX="90.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="25.0" prefWidth="31.0" text="?" />
+                  <Label fx:id="lifes" layoutX="320.0" text="Error" />
+                  <Button fx:id="resetButton" layoutX="147.0" mnemonicParsing="false" onAction="#ResetGame" text="Reset Game" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
